@@ -7,6 +7,52 @@
     <link rel="stylesheet" href="/main.77bb5cfd.css">
   <script src="/main.77bb5cfd.js"></script></head>
   <body>
-    <h2 class="title">Checkout Page</h2>
+    <div class="main">
+      <header class="header">
+        <h1 class="header__title">Checkout Page</h1>
+      </header>
+
+      <section class="checkout">
+        <div class="checkout__items">
+          <div class="item">
+            <div class="item__img"><img src="/photo1.c8fa2220.png" alt=""></div>
+
+            <div class="item__info">
+              <p class="item__name">Vintage Backbag</p>
+              <p class="item__price"><div class="item__price--sale">$54.99</div>
+              <div class="item__price--original">$94.99</div></p>
+            </div>
+
+            <div class="item__qty">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+              <input type="number" class="quantity" min="0" name="quantity" value="1">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button></div>
+          </div>
+
+          <div class="item">
+            <div class="item__img"><img src="/photo2.eca58ce1.png" alt=""></div>
+
+            <div class="item__info">
+              <p class="item__name">Levi Shoes</p>
+              <p class="item__price"><div class="item__price--sale">$74.99</div>
+              <div class="item__price--original">$124.99</div></p>
+            </div>
+
+            <div class="item__qty">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+              <input type="number" class="quantity" min="0" name="quantity" value="1">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button></div>
+          </div>
+        </div>
+        <div class="checkout__value">
+          <div class="checkout__value--ship row"><p>Shipping</p>
+            <div>$19</div>
+          </div>
+          <div class="checkout__value--total row"><p>Total</p>
+            <div>$148.98</div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
