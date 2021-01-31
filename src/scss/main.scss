@@ -14,17 +14,23 @@
   flex-direction: column;
 }
 
+.header {
+  &__title {
+    color: $light-black;
+  }
+}
+
 .checkout {
   background: $gray-6;
-  padding: 1.5em;
+  padding: 0 1.5em;
   border-radius: 0.8rem;
 
   &__items {
     display: flex;
     flex-direction: column;
-    gap: 1em;
 
     .item {
+      margin-top: 1.875rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -48,6 +54,10 @@
       &__info {
         grid-area: item__info;
 
+        .item__name {
+          color: $light-black;
+        }
+
         .item__price {
           display: flex;
           gap: 1em;
@@ -58,6 +68,7 @@
 
           &--original {
             text-decoration: line-through;
+            color: $light-black;
           }
         }
       }

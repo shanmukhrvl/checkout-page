@@ -12,17 +12,21 @@
   flex-direction: column;
 }
 
+.header__title {
+  color: #4e5150;
+}
+
 .checkout {
   background: #f2f2f2;
-  padding: 1.5em;
+  padding: 0 1.5em;
   border-radius: 0.8rem;
 }
 .checkout__items {
   display: flex;
   flex-direction: column;
-  gap: 1em;
 }
 .checkout__items .item {
+  margin-top: 1.875rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -42,6 +46,9 @@
 .checkout__items .item__info {
   grid-area: item__info;
 }
+.checkout__items .item__info .item__name {
+  color: #4e5150;
+}
 .checkout__items .item__info .item__price {
   display: flex;
   gap: 1em;
@@ -51,6 +58,7 @@
 }
 .checkout__items .item__info .item__price--original {
   text-decoration: line-through;
+  color: #4e5150;
 }
 .checkout__items .item__qty {
   grid-area: item__qty;
