@@ -13,7 +13,7 @@ body {
 
 .main {
   width: 97%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -241,6 +241,100 @@ body {
   border: none;
   border-radius: 0.75rem;
   align-self: flex-end;
+}
+
+.footer {
+  text-align: center;
+  color: #a9a9a9;
+  margin-top: 3em;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: 1.25rem;
+  }
+
+  .main {
+    width: 70%;
+  }
+}
+@media (min-width: 900px) {
+  :root {
+    font-size: unset;
+  }
+
+  .main {
+    width: 80%;
+  }
+
+  .header__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+
+  .grid-row-reverse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0;
+    gap: 1em 10%;
+  }
+  .grid-row-reverse .checkout {
+    grid-column: 2/-1;
+    align-self: flex-start;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+  .grid-row-reverse .checkout .item__name, .grid-row-reverse .checkout .item__price--sale {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .grid-row-reverse .checkout .item__price--original {
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+  }
+  .grid-row-reverse .checkout__value .value__type {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  .grid-row-reverse .form {
+    grid-column: 1/2;
+  }
+  .grid-row-reverse .form section {
+    margin-top: 0;
+  }
+  .grid-row-reverse .form section h2 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    margin-top: 0;
+  }
+  .grid-row-reverse .form section + section {
+    margin-top: 3.625rem;
+  }
+  .grid-row-reverse .form__list--item label {
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+  }
+  .grid-row-reverse .form__list--item .material-icons {
+    font-size: 1.25rem;
+    margin: 0.3em 0 0 0.5em;
+  }
+  .grid-row-reverse .form__list--item input,
+.grid-row-reverse .form__list--item select {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding-left: 2.5em;
+  }
+  .grid-row-reverse .form .list--item-row input[type=number] {
+    line-height: 1.3rem;
+  }
+  .grid-row-reverse .form .check--save {
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+  }
+  .grid-row-reverse .form .submit--btn {
+    margin-top: 1.25rem;
+  }
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

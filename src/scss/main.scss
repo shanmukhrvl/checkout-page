@@ -16,7 +16,7 @@ body {
 
 .main {
   width: 97%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -287,3 +287,12 @@ body {
     align-self: flex-end;
   }
 }
+
+.footer {
+  text-align: center;
+  color: #a9a9a9;
+  margin-top: 3em;
+  font-size: 0.8rem;
+}
+
+@import "responsive";

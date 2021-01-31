@@ -1,0 +1,113 @@
+@media (min-width: 600px) {
+  :root {
+    font-size: 1.25rem;
+  }
+  .main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: unset;
+  }
+
+  .main {
+    width: 80%;
+  }
+
+  .header {
+    &__title {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+    }
+  }
+
+  .grid-row-reverse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0;
+    gap: 1em 10%;
+
+    .checkout {
+      grid-column: 2 / -1;
+      align-self: flex-start;
+      margin-bottom: 2em;
+      margin-top: 1em;
+
+      .item {
+        &__name,
+        &__price--sale {
+          font-size: 1rem;
+          line-height: 1.25rem;
+        }
+
+        &__price--original {
+          font-size: 0.75rem;
+          line-height: 0.9375rem;
+        }
+      }
+
+      &__value {
+        .value__type {
+          font-size: 1.125rem;
+          line-height: 1.375rem;
+        }
+      }
+    }
+
+    .form {
+      grid-column: 1 / 2;
+
+      section {
+        margin-top: 0;
+
+        h2 {
+          font-size: 1.125rem;
+          line-height: 1.375rem;
+          margin-top: 0;
+        }
+      }
+
+      section + section {
+        margin-top: 3.625rem;
+      }
+
+      &__list {
+        &--item {
+          label {
+            font-size: 0.75rem;
+            line-height: 0.9375rem;
+          }
+
+          .material-icons {
+            font-size: 1.25rem;
+            margin: 0.3em 0 0 0.5em;
+          }
+
+          input,
+          select {
+            font-size: 1rem;
+            line-height: 1.25rem;
+            padding-left: 2.5em;
+          }
+        }
+      }
+
+      .list--item-row {
+        input[type="number"] {
+          line-height: 1.3rem;
+        }
+      }
+
+      .check--save {
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+      }
+
+      .submit--btn {
+        margin-top: 1.25rem;
+      }
+    }
+  }
+}
