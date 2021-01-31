@@ -55,6 +55,7 @@
         grid-area: item__info;
 
         .item__name {
+          margin-top: 0;
           color: $light-black;
         }
 
@@ -144,5 +145,85 @@
     &--total {
       padding: 1em 0;
     }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  section {
+    margin-top: 2em;
+
+    h2 {
+      color: $gray-1;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &--item {
+      margin-top: 1em;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: $gray-2;
+      }
+
+      .inputWithIcon {
+        display: flex;
+        align-items: center;
+
+        .material-icons {
+          font-size: 1rem;
+          position: absolute;
+          margin-top: 0.1em;
+          left: 1.5rem;
+          z-index: 1;
+        }
+
+        input,
+        select {
+          width: 100%;
+          position: relative;
+          margin-top: 0.5em;
+          padding: 0.75em 0.5em 0.75rem 2rem;
+          border: 1px solid $gray-3;
+          border-radius: 0.75rem;
+          font-size: 0.75rem;
+
+          &::placeholder {
+            color: $gray-3;
+          }
+        }
+
+        select:invalid {
+          color: $gray-3;
+        }
+      }
+    }
+  }
+
+  .check--save {
+    margin: 1em 0 1.3em 0;
+
+    .checkBox {
+      margin-left: 0;
+    }
+  }
+
+  .submit--btn {
+    width: 10.3em;
+    padding: 1em 0;
+    color: #ffffff;
+    background: $orange;
+    border: none;
+    border-radius: 0.75rem;
+    align-self: flex-end;
   }
 }
