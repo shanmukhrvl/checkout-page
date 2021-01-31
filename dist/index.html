@@ -10,7 +10,7 @@
   <body>
     <div class="main">
       <header class="header">
-        <h1 class="header__title">Checkout Page</h1>
+        <h1 class="header__title">Checkout</h1>
       </header>
 
       <section class="checkout">
@@ -29,11 +29,11 @@
             <div class="item__qty">
               <div class="controls">
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                  -
+                  &minus;
                 </button>
                 <input type="number" class="quantity" min="0" name="quantity" value="1">
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
-                  +
+                  &plus;
                 </button>
               </div>
             </div>
@@ -53,11 +53,11 @@
             <div class="item__qty">
               <div class="controls">
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                  -
+                  &minus;
                 </button>
                 <input type="number" class="quantity" min="0" name="quantity" value="1">
                 <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
-                  +
+                  &plus;
                 </button>
               </div>
             </div>
@@ -65,12 +65,12 @@
         </div>
         <div class="checkout__value">
           <div class="checkout__value--ship row">
-            <div>Shipping</div>
-            <div>$19</div>
+            <div class="value__type">Shipping</div>
+            <div class="value__price">$19</div>
           </div>
           <div class="checkout__value--total row">
-            <div>Total</div>
-            <div>$148.98</div>
+            <div class="value__type">Total</div>
+            <div class="value__price">$148.98</div>
           </div>
         </div>
       </section>
@@ -120,31 +120,33 @@
                 <input type="text" id="city" placeholder="Your city.." required="">
               </div>
             </li>
-            <li class="form__list--item">
-              <label for="country">Country</label>
-              <div class="inputWithIcon">
-                <span class="material-icons"> location_city </span>
-                <!-- <input
+            <span class="list--item-row">
+              <li class="form__list--item item-ro1-1">
+                <label for="country">Country</label>
+                <div class="inputWithIcon">
+                  <span class="material-icons"> location_city </span>
+                  <!-- <input
                   type="text"
                   id="country"
                   placeholder="Your country.."
                   required
                 /> -->
-                <select name="country" id="country" required="">
-                  <option value="" disabled="" selected="">Your country...</option>
-                  <option value="india">India</option>
-                  <option value="japan">Japan</option>
-                  <option value="australia">Australia</option>
-                </select>
-              </div>
-            </li>
-            <li class="form__list--item">
-              <label for="postal-code">Postal Code</label>
-              <div class="inputWithIcon">
-                <span class="material-icons"> markunread_mailbox </span>
-                <input type="number" id="postal-code" placeholder="Your postal code.." required="">
-              </div>
-            </li>
+                  <select name="country" id="country" required="">
+                    <option value="" disabled="" selected="">Your country...</option>
+                    <option value="india">India</option>
+                    <option value="japan">Japan</option>
+                    <option value="australia">Australia</option>
+                  </select>
+                </div>
+              </li>
+              <li class="form__list--item item-row-2">
+                <label for="postal-code">Postal Code</label>
+                <div class="inputWithIcon">
+                  <span class="material-icons"> markunread_mailbox </span>
+                  <input type="number" id="postal-code" placeholder="Your postal code.." required="">
+                </div>
+              </li>
+            </span>
           </ul>
         </section>
 
