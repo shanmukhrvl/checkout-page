@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+<img src="https://github.com/shanmukhrvl/checkout-page/blob/main/src/images/screenshot_checkout-page.png" height="600" />
 
 - You can see the demo [here](https://rvl-checkout-page.netlify.app/)
 
