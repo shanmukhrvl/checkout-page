@@ -12,11 +12,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
+  margin: 0;
 }
 
 .main {
-  width: 97%;
-  max-width: 1200px;
+  width: 85%;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -291,7 +292,6 @@ body {
 .footer {
   text-align: center;
   color: #a9a9a9;
-  margin-top: 7em;
   font-size: 0.8rem;
 }
 
